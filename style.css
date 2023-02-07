@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*height = altura do elemento. vh = value height.*/
+    width: 100vw;
+    /*vw = value width.*/
+    background-image: url(https://source.unsplash.com/3840x2160/?landscape);
+}
+
+.caixa-maior {
+    background-color: #000000;
+    /*troca a cor de fundo do elemento.*/
+    width: 95%;
+    /*width = largura do elemento.*/
+    max-width: 430px;
+    opacity: 0.8;
+    /*opacity - transparência do item.*/
+    padding: 20px;
+    border-radius: 25px;
+}
+
+input {
+    border: none;
+    /*border - configura a borda do elemento*/
+    outline: none;
+    /*outilne - borda quando o elemento está selecionado.*/
+    width: calc(100% - 100px);
+    padding: 10px;
+    /*padding - espaçamento interno do elemento.*/
+    border-radius: 24px;
+    /*border-radius - arredonda a borda.*/
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: #FFFFFF;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    float: right;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7c7c7c6b;
+}
+
+.caixa-media {
+    margin-top: 20px;
+}
+
+.caixa-menor {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.lupa {
+    height: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 28px;
+    /*font-size - tamanho do texto*/
+}
+
+.temp {
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.descricao {
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-transform: capitalize;
+    /*capitalize - sempre coloca a primeira letra em maiúsculo*/
+}
+
+.umidade {
+    color: #FFFFFF;
+    margin-top: 30px;
+}
