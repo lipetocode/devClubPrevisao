@@ -6,7 +6,7 @@ let chave = "0bba744b5c955b208973278cc0e3345f"
 function colocarNaTela(dados){
     console.log(dados)
     document.querySelector(".cidade").innerHTML = "Tempo em " + dados.name
-    document.querySelector(".temp").innerHTML = Math.floor(dados.main.temp) + "°C"
+    document.querySelector(".temp").innerHTML = Math.round(dados.main.temp) + "°C"
     document.querySelector(".descricao").innerHTML = dados.weather[0].description
     document.querySelector(".umidade").innerHTML = "Umidade: " + Math.floor(dados.main.humidity) + "%"
     document.querySelector(".icone").src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
